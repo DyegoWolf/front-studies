@@ -1,4 +1,4 @@
-<h1 align="center">Estudos HTML, CSS e JavaScript</h1>
+<h1>Estudos HTML, CSS e JavaScript</h1>
 <p>Projeto para estudos de front-end e aplicações client-side</p>
 
 <h2>Anotações</h2>
