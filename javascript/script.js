@@ -1,7 +1,7 @@
 function welcome(){
     var nome = prompt("Informe o seu nome: ");
     var h4 = document.getElementById("id1");
-    h4.innerText = "Sejam bem-vindo, " + nome;
+    h4.innerText = "Seja bem-vindo, " + nome;
 }
 
 function count(){
