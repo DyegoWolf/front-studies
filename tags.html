@@ -1,47 +1,118 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
         <title>Principais tags HTML</title>
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            crossorigin="anonymous">
 
-        <a href="index.html">
-            <img src="media/e-book.png" width="50" height="50" alt="E-book">
-        </a>
-        <a href="index.html">Home</a>
-        <a href="tags.html">Tags</a>
-        <a href="count.html">Contador de lições</a>
-    </head>
+        <div class="container">
+            <!--Barra de navegação com bootstrap-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
-    <body>
-        <h1>Título com H1</h1>
-        <h2>Título com H2</h2>
-        <h3>Título com H3</h3>
-        <h4>Título com H4</h4>
-        <h5>Título com H5</h5>
-        <h6>Título com H6</h6>
+                    <!--Adicionando imagem e nome do projeto-->
+                    <a href="index.html">
+                        <img src="media/e-book.png" width="50" height="50" alt="E-book">
+                    </a>
+                    <a class="navbar-brand" href="index.html">Front Studies</a>
 
-        <div>
-            Competências
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--Listagem de itens da barra de navegação-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tags.html">Tags</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="count.html">Contador de lições</a>
+                            </li>
+                        </ul>
+
+                        <!--Campo de busca-->
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Pesquise aqui..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
         </div>
 
-        <blockquote>Eu sou uma citação!</blockquote>
+    </head>
 
-        <span>Lista ordenada</span>
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ol>
+    <body class="p-3 mb-2 bg-light text-dark">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Título com H1</h1>
+                    <h2>Título com H2</h2>
+                    <h3>Título com H3</h3>
+                    <h4>Título com H4</h4>
+                    <h5>Título com H5</h5>
+                    <h6>Título com H6</h6>
 
-        <span>Lista não ordenada</span>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ul>
+                    </br>
+                    <span>Lista ordenada (com um item selecionado)</span>
+                    <ol class="list-group">
+                        <li class="list-group-item active" aria-current="true">Item 1</li>
+                        <li class="list-group-item">Item 2</li>
+                        <li class="list-group-item">Item 3</li>
+                        <li class="list-group-item">Item 4</li>
+                    </ol>
+
+                    </br>
+                    <span>Lista não ordenada</span>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item 1</li>
+                        <li class="list-group-item">Item 2</li>
+                        <li class="list-group-item">Item 3</li>
+                        <li class="list-group-item">Item 4</li>
+                    </ul>
+
+                    </br>
+                    <span>Competências</span>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">HTML</div>
+                                O quanto aprendi sobre a estrutura de um documento html
+                            </div>
+                            <span class="badge bg-primary rounded-pill">5/10</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">CSS</div>
+                                O quanto aprendi a estilizar com estilo
+                            </div>
+                            <span class="badge bg-primary rounded-pill">4/10</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">JavaScript</div>
+                                O quanto aprendi a dar vida a uma página web
+                            </div>
+                            <span class="badge bg-primary rounded-pill">4/10</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
     </body>
+
 </html>
