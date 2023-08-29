@@ -5,5 +5,5 @@
 <ul>
     <li>Utilizar server do Python para rodar projeto: <i>python -m http.server 8000</i></li>
 </ul>
-
+</br>
 <h4 align="center">🚧  Em construção...  🚧</h4>
