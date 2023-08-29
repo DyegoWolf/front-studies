@@ -2,4 +2,4 @@
 
 <p align="center">Projeto para estudos de front-end e aplicações client-side</p>
 
-<h4>🚧  Em construção...  🚧</h4>
+<h4 align="center">🚧  Em construção...  🚧</h4>
